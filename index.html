@@ -9,7 +9,7 @@
         /* Global Styles */
         body {
             font-family: 'Arial Black', sans-serif;
-            background-image: url('background.jpg');
+            background-image: url('img/background.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -21,10 +21,9 @@
 
         /* Hero Section */
         .hero {
-            position: relative;
             padding: 60px 20px;
             text-align: center;
-            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for contrast */
+            background-color: rgba(0, 0, 0, 0.5);
             color: #F0F0F0;
         }
 
@@ -44,7 +43,7 @@
             font-size: 1.2rem;
             padding: 15px 30px;
             border-radius: 8px;
-            background-color: #4CAF50;
+            background-color: #007BFF;
             color: white;
             border: none;
             margin-top: 20px;
@@ -53,32 +52,49 @@
         }
 
         .btn-toggle:hover {
-            background-color: #2E7D32;
+            background-color: #0e290f;
             transform: translateY(-3px);
         }
 
         /* Services Section */
         .services {
             margin: 40px auto;
-            text-align: center;
+            padding: 20px;
         }
 
         .services h2 {
             font-size: 2rem;
-            color: #4CAF50;
-            border-bottom: 3px solid #4CAF50;
+            color: #007BFF;
             display: inline-block;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+            text-align: left;
         }
 
         .service-item {
-            margin: 20px;
-            padding: 30px;
+            padding: 20px;
             border: 1px solid #DDD;
             border-radius: 8px;
             background: #EDEDED;
             color: #333;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        /* Grid Layout */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .service-item h3 {
+            font-size: 1.5rem;
+            color: #007BFF;
+        }
+
+        .service-item p {
+            font-size: 1rem;
+            color: #333;
         }
 
         /* Hidden Links Popup */
@@ -92,7 +108,7 @@
             display: block;
             margin: 10px 0;
             font-size: 1.2rem;
-            color: #4CAF50;
+            color: #007BFF;
             text-decoration: none;
         }
 
@@ -116,7 +132,7 @@
         }
 
         footer a:hover {
-            color: #2E7D32;
+            color: #007BFF;
         }
 
         /* Responsive Design */
@@ -126,8 +142,7 @@
             }
 
             .service-item {
-                margin: 10px;
-                padding: 20px;
+                padding: 15px;
             }
 
             .btn-toggle {
@@ -155,16 +170,16 @@
     <!-- СЕКЦИЯ УСЛУГ -->
     <div class="container services">
         <h2>НАШИ УСЛУГИ</h2>
-        <div class="row">
-            <div class="col-md-4 service-item">
+        <div class="services-grid">
+            <div class="service-item">
                 <h3>ДЕМОНТАЖ</h3>
                 <p>МЫ ПРЕДОСТАВЛЯЕМ БЕЗОПАСНЫЙ И КОНТРОЛИРУЕМЫЙ ДЕМОНТАЖ ЗДАНИЙ И СООРУЖЕНИЙ.</p>
             </div>
-            <div class="col-md-4 service-item">
+            <div class="service-item">
                 <h3>ВЫВОЗ МУСОРА</h3>
                 <p>ЭФФЕКТИВНАЯ УБОРКА И УТИЛИЗАЦИЯ ОТХОДОВ ПОСЛЕ ДЕМОНТАЖНЫХ РАБОТ.</p>
             </div>
-            <div class="col-md-4 service-item">
+            <div class="service-item">
                 <h3>ПОДГОТОВКА К РЕМОНТУ</h3>
                 <p>ПОДГОТОВКА ПОМЕЩЕНИЙ ДЛЯ РЕМОНТА С УДАЛЕНИЕМ НЕНУЖНЫХ КОНСТРУКЦИЙ.</p>
             </div>
